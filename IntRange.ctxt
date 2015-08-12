@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=x\ y
+comment0.target=IntRange(int,\ int)
+comment1.params=num
+comment1.target=boolean\ contain(int)
+numComments=2

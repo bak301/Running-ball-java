@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="BluejPrj:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BluejPrj_jar</output-path>
+    <root id="archive" name="BluejPrj.jar">
+      <element id="module-output" name="BluejPrj" />
+    </root>
+  </artifact>
+</component>
