@@ -94,8 +94,8 @@ class Stage extends JPanel {
     }
 
     Timer moveBall = new Timer(delay, e->{player.move();score+=player.speed+100-delay;});
-    Timer evaluate = new Timer(13000,e->player.speedUp());
-    Timer randomMove = new Timer (2500,e->{
+    Timer evaluate = new Timer(11000,e->player.speedUp());
+    Timer randomMove = new Timer (1600,e->{
         if((int) Math.ceil(Math.random() * 10) == 1) player.changeClockwise();
     });
 }
