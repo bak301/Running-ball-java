@@ -1,21 +1,19 @@
-import java.awt.*;
-class Ball {
+import java.awt.geom.Ellipse2D;
+
+class Ball extends Ellipse2D.Double{
     int X,Y;
     int speed = 1;
     boolean MoveClockwise;
     String currentDirection;
 
     Ball(int x,int y){
+        super(x,y,20,20);
         this.X = x;
         this.Y = y;
         MoveClockwise = true;
         currentDirection = "right";
     }
-    
-    public void draw(Graphics stage){
-        stage.fillOval(X,Y,20,20); // DRAW THE BALL WITH VARIABLE POSITION
-    }
-    
+
     public void turn(){
         if (MoveClockwise){ // IF THE BALL MOVE CLOCKWISE 
             switch (currentDirection){
@@ -71,6 +69,7 @@ class Ball {
             case "down": 
                 moveDown();break;
         }
+        setFrame(X,Y,20,20);
     }
     
     public void speedUp(){
